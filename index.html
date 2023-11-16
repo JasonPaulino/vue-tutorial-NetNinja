@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Vue CDN to use Vue in the browser -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Learning Vue</title>
+  </head>
+  <body>
+    <h1>test 123</h1>
+
+    <div id="app">
+      <p>{{ fullName }} - {{ occupation }} - {{ age }}</p>
+
+      <!-- v-on is a directive that allows you to listen for events -->
+      <button v-on:click="age++">Increase Age</button>
+      <button v-on:click="age--">Decrease Age</button>
+      <div @click="fullName = 'Jason Brandon Paulino' ">change full name</div>
+      <button @click="changeOccupation('Bloomberg or Thyme Care Engineer')">
+        change occupation
+      </button>
+    </div>
+
+    <!-- Links the js file to html -->
+    <script src="app.js"></script>
+  </body>
+</html>
